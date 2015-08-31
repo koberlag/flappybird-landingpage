@@ -10,6 +10,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var ghPages = require('gulp-gh-pages');
 
 // JavaScript linting task
 gulp.task('jshint', function() {
@@ -67,3 +68,9 @@ gulp.task('default', ['jshint', 'sass', 'watch']);
 
 // Build task
 gulp.task('build', ['jshint', 'sass', 'html', 'scripts', 'styles', 'images']);
+
+//Deploy 
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
