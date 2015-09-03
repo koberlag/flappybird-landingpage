@@ -13,16 +13,6 @@ html,body {
 //   height:auto;
 // }
 
-h1
-{
-	padding-bottom:.25em;
-	font-size:3em;
-	p
-	{
-		font-size:2em;
-	}
-}
-
 .features
 {
 	background-color:$lightGrey;
@@ -38,6 +28,11 @@ h1
 	{
 		display: inline-block
 	}
+  .t
+  {
+      width:30%;
+      margin:0 auto;
+  }
 }
 
 .intro {
@@ -63,6 +58,15 @@ h1
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h1
+  {
+    padding-bottom:.25em;
+    font-size:4em;
+  }
+  p
+  {
+    font-size:2em;
+  }
 }
 
 .content

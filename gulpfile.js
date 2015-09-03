@@ -71,6 +71,6 @@ gulp.task('build', ['jshint', 'sass', 'html', 'scripts', 'styles', 'images']);
 
 //Deploy 
 gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
+  return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
