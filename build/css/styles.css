@@ -428,13 +428,23 @@ html, body {
   margin: 0;
   font-family: 'Open Sans Condensed', sans-serif; }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
 .features {
   background-color: #F7F8FA;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .features
 ul {
     list-style-type: none;
-    width: 80%;
     margin: 0 auto;
     padding: 0; }
   .features
@@ -442,8 +452,11 @@ li {
     display: inline-block; }
   .features
 .t {
-    width: 400px;
-    margin: 0 auto; }
+    text-align: center; }
+  .features
+.parent {
+    text-align: left;
+    display: inline-block; }
 
 .intro {
   background-color: #fff;
