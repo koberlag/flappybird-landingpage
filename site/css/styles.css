@@ -30,8 +30,12 @@ li {
     text-align: center; }
   .features
 .image-container {
-    text-align: left;
+    text-align: center;
     display: inline-block; }
+    @media screen and (min-width: 453px) {
+      .features
+.image-container {
+        text-align: left; } }
 
 .intro {
   background-color: #fff;
