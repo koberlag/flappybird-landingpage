@@ -470,7 +470,7 @@ li {
   /*for mozilla*/
   text-align: center;
   white-space: nowrap;
-  background: url("../img/flappy-bird-background.jpg") no-repeat center center fixed;
+  background: url("../img/flappy-bird-background-small.jpg") no-repeat center center fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -492,6 +492,17 @@ h1 {
   .intro
 p {
     font-size: 2em; }
+  @media screen and (min-width: 600px) {
+    .intro {
+      background: url("../img/flappy-bird-background-medium.jpg") no-repeat center center fixed;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+  @media screen and (min-width: 1200px) {
+    .intro {
+      background: url("../img/flappy-bird-background-large.jpg") no-repeat center center fixed; } }
 
 .content {
   display: inline-block;
