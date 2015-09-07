@@ -1,5 +1,6 @@
 $white: #fff;
 $lightGrey: #F7F8FA;
+$darkBlue:#43767C;
 
 html,body {
   height:100%;
@@ -36,7 +37,9 @@ html {
 	}
 	li
 	{
-		display: inline-block
+		display: inline-block;
+    padding:10px;
+    // padding-top:15px;
 	}
   .wrapper
   {   
@@ -111,4 +114,24 @@ html {
 	z-index:99;
 	color:$lightGrey;
 	position:relative;
+}
+
+.call-to-action
+{
+  padding:50px;
+  text-align: center;
+  font-size: 2em;
+  background-color:$lightGrey;
+  div
+  {
+    border-radius:8px;
+    background-color:$darkBlue;
+    display: inline-block;
+    padding:20px 60px 20px 60px;
+  }
+  a
+  {
+    text-decoration: none;
+    color:$white;
+  }
 }

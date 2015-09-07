@@ -449,7 +449,8 @@ ul {
     padding: 0; }
   .features
 li {
-    display: inline-block; }
+    display: inline-block;
+    padding: 10px; }
   .features
 .wrapper {
     text-align: center; }
@@ -512,3 +513,19 @@ p {
   z-index: 99;
   color: #F7F8FA;
   position: relative; }
+
+.call-to-action {
+  padding: 50px;
+  text-align: center;
+  font-size: 2em;
+  background-color: #F7F8FA; }
+  .call-to-action
+div {
+    border-radius: 8px;
+    background-color: #43767C;
+    display: inline-block;
+    padding: 20px 60px 20px 60px; }
+  .call-to-action
+a {
+    text-decoration: none;
+    color: #fff; }
